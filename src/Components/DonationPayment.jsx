@@ -1,13 +1,52 @@
-import { useState } from "react";
+import React from "react";
+import { Link} from "react-router-dom";
+import Footer from "./Footer";
+import Navbar from "./jsx/Navbar";
+
 
 export default function DonationPayment(){
     let leftArrowHead="<";
+    // let isChecked=false;
+    
+   
 
-    let {amount,setAmount}=useState(10);
-    let {total,setTotal}=useState(0);
+    let [amount,setAmount]=React.useState(0);
+    let [fee,setFee]=React.useState(0);
+    let [total,setTotal]=React.useState(0);
+
+    let [reUrl,setReUrl]=React.useState();
+    let [isChecked,setIsChecked]=React.useState(false);
+
+    const handleIt=(value)=>{
+        console.log("value ",value)
+        setAmount(Number(value));
+        let per=Number(value)*0.05;
+        // setTotal(Number(value)+10);
+        setFee(per);
+        setTotal(Number(value)+per);
+
+    }
+ 
+
+    const checkIt=()=>{
+        
+        setIsChecked(true);
+        setReUrl("/thankyou")
+        
+    }
+    const payment=()=>{
+        
+        if(!isChecked)
+        { 
+           
+            alert("accept the Term & Condition to proceed further.")
+      
+        }
+    }
 
     return(
         <>
+       <Navbar />
         <div className="donationPaymentMainDiv flex">
 
         <div className="donationPaymentLeftDiv">
@@ -28,7 +67,7 @@ export default function DonationPayment(){
         <div className="donationFormbox ">
     <div>
         <div className="mb-2">Name on Card <span className="pink w-600 large">*</span></div>
-        <div className="mr-5"><input type="text"id="inputName"></input></div>
+        <div className="mr-5 "><input type="text"id="inputName" placeholder="Full Name"></input></div>
     </div>
 
         <div>
@@ -65,7 +104,7 @@ export default function DonationPayment(){
             <p>Your contribution</p>
             <div className="amountInputBox flex">
             {/* <p>$</p> */}
-        <span id="amountSymbol">$</span>  <input type="text" ></input>  
+        <span id="amountSymbol">$</span>  <input type="text" onChange={(e)=>handleIt(e.target.value)}></input>  
         <span id="USD">USD</span>
             </div>
         </div>
@@ -77,7 +116,7 @@ export default function DonationPayment(){
             </div>
         <div className="amountSummary flex">
             <div className="subTotal">Indiegogo Fee</div>
-            <div className="amount">$10 USD</div>
+            <div className="amount">${fee} USD</div>
             </div>
         <div className="amountSummary flex">
             <div className="total">TOTAL</div>
@@ -89,15 +128,20 @@ export default function DonationPayment(){
         
 <div className="flex margin-top-5 alignLeft">
     <div>
-                    <input type="checkBox" className="footerCheckBox" />
+                    <input type="checkBox" className="footerCheckBox"  onClick={()=>checkIt()} />
+                   
                     </div>
-                    <div>I agree to the <b> <span className="pink space"> Terms of Use </span> </b>and have read and understand the <b><span className="pink space"> Privacy Policy.</span></b>
+                    <div id="iAgree">I agree to the <b> <span className="pink space"> Terms of Use </span> </b>and have read and understand the <b><span className="pink space"> Privacy Policy.</span></b>
                     </div>
 </div>
 <div>
-                    <button id="footerFormSubmits">SUBMIT PAYMENT</button>
+
+<Link to={reUrl}> 
+<button id="footerFormSubmits" onClick={()=>payment()}> SUBMIT PAYMENT </button>
+</Link>
                     </div>
                {/*  */}
+               {/* */}
 
 
 
@@ -109,6 +153,8 @@ export default function DonationPayment(){
 
 
         </div>
+        
+        <Footer />
         </>
     )
 }

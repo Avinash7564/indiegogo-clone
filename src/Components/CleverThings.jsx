@@ -7,7 +7,7 @@ export default function CleverThings(){
     <div className="cleverThingsMainDiv flex">
 
         <div className="cleverImageDiv">
-            <img src="https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_275,g_center,q_auto:best,dpr_1.3,f_auto/homepage/crowdfunding-crowdsurfing_base.svg" alt="image" />
+            <img src="https://c3.iggcdn.com/indiegogo-media-prod-cld/image/upload/c_fit,w_275,g_center,q_auto:best,dpr_1.3,f_auto/homepage/crowdfunding-crowdsurfing_base.svg" alt="image1" />
         </div>
 
         <div className="cleverTextDiv">

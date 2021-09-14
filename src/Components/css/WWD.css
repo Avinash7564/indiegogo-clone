@@ -1,0 +1,145 @@
+.wwd-div1 {
+  width: 99%;
+  height: 440px;
+  position: relative;
+}
+.wwd-div2 {
+  width: 40%;
+  height: 500px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.wwd-div1 h1 {
+  font-weight: bolder;
+  font-size: 50px;
+  position: absolute;
+  top: 120px;
+  left: 450px;
+}
+.wwd-div1-div1 {
+  width: 800px;
+  position: absolute;
+  top: 180px;
+  left: 500px;
+  padding: 60px;
+}
+.wwd-div1-div1 h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: normal;
+  padding-bottom: 50px;
+}
+.wwd-div3-h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+.wwd-div4 {
+  padding: 30px;
+  text-align: center;
+}
+.wwd-div4-h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.wwd-p-div {
+  font-size: 16px;
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+.wwd-div4 {
+  width: 99%;
+  height: 350px;
+  background: #f5f5f5;
+  margin-top: 50px;
+}
+.input-wwd {
+  width: 250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.input-wwd input {
+  height: 40px;
+  width: 250px;
+}
+.input-wwd button {
+  width: 150px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 50px;
+  background-color: rgb(229, 16, 117);
+  color: white;
+  font-weight: bolder;
+  border: none;
+}
+.wwd-div5 {
+  width: 70%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 49.5% 1% 49.5%;
+  margin: auto;
+  margin-top: 60px;
+  padding: 50px;
+}
+.wwd-div5-div2 {
+  height: 250px;
+  width: 5px;
+  margin-right: 300px;
+  background-color: grey;
+}
+.wwd-div5 h1 {
+  margin-top: 70px;
+}
+.wwd-div5 button {
+  border: 3px solid rgb(229, 16, 117);
+  width: 300px;
+  height: 40px;
+  font-weight: bolder;
+  margin-top: 30px;
+  color: rgb(229, 16, 117);
+  background-color: white;
+}
+.wwd-div5 button:hover {
+  border: 2px solid rgb(229, 16, 117);
+  width: 300px;
+  height: 40px;
+  color: white;
+  background-color: rgb(229, 16, 117);
+}
+.wwd-div6 {
+  width: 99%;
+  height: 450px;
+  margin-top: 30px;
+}
+.wwd-div6 h1 {
+  text-align: center;
+}
+.wwd-div6-img {
+  width: 800px;
+  margin: auto;
+}
+.wwd-div6-img img {
+  width: 70%;
+  margin-left: 120px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.wwd-div6-img p {
+  text-align: center;
+  font-size: 18px;
+  word-spacing: 2px;
+}
+.wwd-div6-img button {
+  border: 3px solid rgb(229, 16, 117);
+  width: 300px;
+  height: 40px;
+  font-weight: bolder;
+  margin-left: 250px;
+  margin-top: 50px;
+  color: rgb(229, 16, 117);
+  background-color: white;
+}

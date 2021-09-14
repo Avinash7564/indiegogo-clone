@@ -1,9 +1,8 @@
+import { Link } from "react-router-dom"
 
 export default function PopularCards({props,index}){
     
-    function redirectIt(){
-        window.location.href = props.Link[index];
-    }
+ 
    
    
     return (
@@ -12,10 +11,11 @@ export default function PopularCards({props,index}){
   
     
     <div className="popularCardMainDiv">
-        <div className="popularCardContainer" onClick={redirectIt}>
+    <Link to="/donationpage" ind={index} >
+        <div className="popularCardContainer" >
             <div className="pCardImageDiv">
                
-                <img src={props.Image[index]} alt="popular image"/> 
+                <img src={props.Image[index]} alt="popular images"/> 
             </div>
             <div className="pCardHeadingDiv">
             <h3>FUNDING</h3>
@@ -38,7 +38,7 @@ export default function PopularCards({props,index}){
             </div>
         </div>
 
-
+        </Link>
     </div>
     </>
     )

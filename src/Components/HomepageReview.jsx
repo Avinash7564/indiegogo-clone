@@ -16,7 +16,7 @@ export default function HomepageReview(){
         <div className="hpReviewCardDiv flex">
             <div className="hprCard1">
                 <div className="hprc1ImageDiv">
-                    <img src="./review1.png" alt="review image" />
+                    <img src="./review1.png" alt="review-image1" />
                 </div>
                 <div className="hpriHeaderDiv">
                     <h3>5 Gadgets To Make You Feel At Home, In Your Home</h3>
@@ -28,7 +28,7 @@ export default function HomepageReview(){
 {/*  */}
 <div className="hprCard1">
                 <div className="hprc1ImageDiv">
-                    <img src="./review2.png" alt="review image" />
+                    <img src="./review2.png" alt="review-image1" />
                 </div>
                 <div className="hpriHeaderDiv">
                     <h3>Most Popular Campaign in Every State</h3>
@@ -40,7 +40,7 @@ export default function HomepageReview(){
 {/*  */}
 <div className="hprCard1" id="review3">
                 <div className="hprc1ImageDiv">
-                    <img src="./review3.png" alt="review image"  />
+                    <img src="./review3.png" alt="review-images"  />
                 </div>
                 <div className="hpriHeaderDiv">
                     <h3>8 Green Tech Ideas to Make the Planet Cleane</h3>

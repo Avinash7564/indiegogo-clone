@@ -1,29 +1,24 @@
-import CarouselImageBox from "./CarouselImageBox";
-import CarouselTicketPart from "./CarouselTicketPart";
+// import CarouselContainer  from "../component/jsx/carousel";
 import CleverThings from "./CleverThings";
-import DonationPage from "./DonationPage";
-import DonationPayment from "./DonationPayment";
-import Footer from "./Footer";
+import Footer from "../Components/Footer";
 import HomepageCollections from "./HomepageCollections";
 import HomepageReview from "./HomepageReview";
 import IntrestYou from "./IntrestYou";
-import Navbar from "./Navbar";
+import Navbar from "./jsx/Navbar";
 import HomepagePopularProject from "./PopularProject";
 import TakeRide from "./TakeRide";
-import ThankYou from "./ThankYou";
+import Carosal from "./Carosal";
 
 
 
 export default function HomePage() {
   return (
     <>
-
-<div className="mainDiv">
-
 <Navbar />
+<Carosal />
 
-<CarouselImageBox />
-<CarouselTicketPart />
+<div className="homepageMainDiv">
+
 <HomepagePopularProject />
 <HomepageCollections />
 

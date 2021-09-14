@@ -39,8 +39,8 @@ export default function HomepagePopularProject()
         <div className="hppLowerDiv">
             <div className="popularCardsDiv flex">
             {
-              arr.map((i) => {
-                    return   <PopularCards props={obj} index={i} />
+              arr.map((i,k) => {
+                  return <PopularCards props={obj} index={i} key={k}/>
               })}
 
 
