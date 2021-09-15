@@ -18,7 +18,7 @@ const Carosal = () => {
                     <h5 href="#">Featured</h5>
                     <h6>Understanding the Latest Tech in PCB Manufacturing</h6>
                     <p>Printed circuit boards are getting smaller and more flexible, opening up new possibilities for tech product innovation. Get up to speed on the latest PCB advancements in this article from Arrow Electronics.</p>
-                    <p>LEARN MORE </p>
+                    
                 </Carousel.Caption>
                 </div>
 
@@ -33,7 +33,7 @@ const Carosal = () => {
                     <h5 href="#">Featured</h5>
                     <h6>Understanding the Latest Tech in PCB Manufacturing</h6>
                     <p>Printed circuit boards are getting smaller and more flexible, opening up new possibilities for tech product innovation. Get up to speed on the latest PCB advancements in this article from Arrow Electronics.</p>
-                    <p>LEARN MORE </p>
+                    
                 </Carousel.Caption>
             </Carousel.Item >
             <Carousel.Item interval={2000} className="carousel-item" >
@@ -46,7 +46,7 @@ const Carosal = () => {
                     <h5 href="#">Featured</h5>
                     <h6>Understanding the Latest Tech in PCB Manufacturing</h6>
                     <p>Printed circuit boards are getting smaller and more flexible, opening up new possibilities for tech product innovation. Get up to speed on the latest PCB advancements in this article from Arrow Electronics.</p>
-                    <p>LEARN MORE </p>
+                    
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000} className="carousel-item" >
@@ -59,7 +59,7 @@ const Carosal = () => {
                     <h5 href="#">Featured</h5>
                     <h6>Understanding the Latest Tech in PCB Manufacturing</h6>
                     <p>Printed circuit boards are getting smaller and more flexible, opening up new possibilities for tech product innovation. Get up to speed on the latest PCB advancements in this article from Arrow Electronics.</p>
-                    <p>LEARN MORE </p>
+                    
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={2000} className="carousel-item" >
@@ -72,7 +72,7 @@ const Carosal = () => {
                     <h5 href="#">Featured</h5>
                     <h6>Understanding the Latest Tech in PCB Manufacturing</h6>
                     <p>Printed circuit boards are getting smaller and more flexible, opening up new possibilities for tech product innovation. Get up to speed on the latest PCB advancements in this article from Arrow Electronics.</p>
-                    <p>LEARN MORE </p>
+                    
                 </Carousel.Caption>
             </Carousel.Item>
             </Carousel >
