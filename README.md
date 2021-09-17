@@ -1,6 +1,6 @@
 # Install and Run
 
-* Clone it first using `git clone https://github.com/hello-snsa/indiegogo-clone.git`
+* Clone it first using `git clone https://github.com/Avinash7564/indiegogo-clone.git`
 
 * You 'll have to install node_modules. using `npm install`
 
